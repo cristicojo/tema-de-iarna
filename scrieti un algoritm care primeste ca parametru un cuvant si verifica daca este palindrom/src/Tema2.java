@@ -10,16 +10,15 @@ class Tema2 {
     void palindrom(String st[]) {
         boolean bo = false;
 
-        LOOP:
+        //LOOP:
         for (int i = 0; i < st.length / 2; i++) {
 
-            if (st[i].equals(st[st.length - i - 1]))
+            if (st[i].equals(st[st.length - i - 1])) {
 
                 bo = true;
-            else {
-                bo = false;
-                break LOOP;
             }
+
+            break;
         }
 
         if (bo == true)

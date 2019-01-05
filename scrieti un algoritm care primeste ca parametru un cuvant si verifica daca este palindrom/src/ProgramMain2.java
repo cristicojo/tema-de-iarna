@@ -20,7 +20,7 @@ public class ProgramMain2{
 //        System.out.print("--> ");
 //        t2.palindrom(str);
 
-        t2.palindrom1("anaa");
+        t2.palindrom1("ana");
 
 
     }
