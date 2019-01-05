@@ -5,32 +5,25 @@
 //    "PASTOR" -> NOT OKAY
 //    "KINDER" -> NOT OKAY
 
-class Tema2 {
+public class Tema2 {
 
-    void palindrom(String st[]) {
-        boolean bo = false;
+    public boolean isPalindrom(String st[]) {
 
-        //LOOP:
+
         for (int i = 0; i < st.length / 2; i++) {
 
-            if (st[i].equals(st[st.length - i - 1])) {
+            if (!st[i].equals(st[st.length - i - 1])) {
 
-                bo = true;
+                return false;
             }
 
-            break;
         }
-
-        if (bo == true)
-            System.out.println("OKAY");
-        else
-            System.out.println("NOT OKAY");
-
+        return true;
     }
 
 
     //alta metoda mai simpla
-    void palindrom1(String a) {
+    public boolean isPalindrom1(String a) {
 
         String b = "";
 
@@ -38,11 +31,12 @@ class Tema2 {
             b = b + a.charAt(i);
         }
 
+        System.out.print(a+" --> ");
         if (a.equals(b))
-            System.out.println("OKAY");
+            return true;
         else
-            System.out.println("NOT OKAY");
-
+            return false;
     }
+
 }
 

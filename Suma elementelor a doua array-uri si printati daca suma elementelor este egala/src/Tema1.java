@@ -10,17 +10,47 @@ import java.util.Scanner;
 
 class Tema1 {
     Scanner s;
+    private int a[]=new int[5];
+    private int b[]=new int[6];
+    private int S1=0;
+    private int S2=0;
 
     Tema1() {
         s = new Scanner(System.in);
     }
 
-    void write() {
-        int a[] = new int[5];
+
+    void calculare(){
+
+        S1=0;
+        S2=0;
+        for (int i = 0; i < a.length; i++) {
+
+            S1 = S1 + a[i];
+        }
+
+        System.out.println("suma elem pt primul array este:" + S1);
+
+        for (int i = 0; i < b.length; i++) {
+
+            S2 = S2 + b[i];
+        }
+        System.out.println("suma elem pt al doilea array este:" + S2);
+
+
+    }
+
+    void citire() {
+
 
         for (int i = 0; i < a.length; i++) {
             System.out.print("a[" + i + "]=");
             a[i] = s.nextInt();
+        }
+        System.out.println("al doilea array ----------");
+        for (int i = 0; i < b.length; i++) {
+            System.out.print("b[" + i + "]=");
+            b[i] = s.nextInt();
         }
 
         System.out.print("primul array:");
@@ -28,39 +58,18 @@ class Tema1 {
             System.out.print(y + " ");
         }
         System.out.println();
-
-        int S1 = 0;
-        for (int i = 0; i < a.length; i++) {
-
-            S1 = S1 + a[i];
-        }
-
-        System.out.println("suma elem pt primul array este:" + S1);
-        int b[] = new int[6];
-
-        for (int i = 0; i < b.length; i++) {
-            System.out.print("b[" + i + "]=");
-            b[i] = s.nextInt();
-        }
-
         System.out.print("al doilea array:");
         for (int z : b) {
             System.out.print(z + " ");
         }
         System.out.println();
 
-        int S2 = 0;
-        for (int i = 0; i < b.length; i++) {
+    }
 
-            S2 = S2 + b[i];
-        }
-        System.out.println("suma elem pt al doilea array este:" + S2);
-
+    void afisare(){
         if (S1 == S2)
             System.out.println("OKAY");
         else
             System.out.println("NOT OKAY");
-
-
     }
 }

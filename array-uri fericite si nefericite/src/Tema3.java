@@ -48,6 +48,8 @@ class Tema3 {
             a[i] = s.nextInt();
         }
 
+        conditie();
+
     }
 
 
