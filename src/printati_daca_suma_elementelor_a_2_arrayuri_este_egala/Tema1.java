@@ -1,26 +1,28 @@
-//scrieti un algoritm care sa calculeze sumele elementelor a doua array-uri si sa printeze daca sumele elementelor sunt egale.
+//scrieti un algoritm care sa calculeze sumele elementelor a doua array-uri si sa printeze daca sumele
+//elementelor sunt egale.
 //    -trebuie cel putin 3 exemple care sa arate ca algoritmul este corect.
 //    -acest algormit trebuie sa fie scris intr-o clasa separata, cu metode unde este cazul
 //
 //    [1,3,5] | [9,0] -> OKAY
 //    [1,1,1,1,1] | [1,1,1,1,1,1] -> NOT OKAY.
 
+package printati_daca_suma_elementelor_a_2_arrayuri_este_egala;
 
 import java.util.Scanner;
 
-class Tema1 {
-    Scanner s;
+public class Tema1 {
+    private Scanner s;
     private int a[]=new int[5];
     private int b[]=new int[6];
     private int S1=0;
     private int S2=0;
 
-    Tema1() {
+    public Tema1() {
         s = new Scanner(System.in);
     }
 
 
-    void calculare(){
+    public void calculare(){
 
         S1=0;
         S2=0;
@@ -40,7 +42,7 @@ class Tema1 {
 
     }
 
-    void citire() {
+    public void citire() {
 
 
         for (int i = 0; i < a.length; i++) {
@@ -66,7 +68,7 @@ class Tema1 {
 
     }
 
-    void afisare(){
+    public void afisare(){
         if (S1 == S2)
             System.out.println("OKAY");
         else

@@ -1,3 +1,5 @@
+package array_fericit_sau_nefericit;
+
 public class ProgramMain3 {
 
     public static void main(String[] args) {
@@ -8,7 +10,6 @@ public class ProgramMain3 {
         t3.conditie();
         t3.afisare();
         t3.fericit_nefericit();
-
 
     }
 }

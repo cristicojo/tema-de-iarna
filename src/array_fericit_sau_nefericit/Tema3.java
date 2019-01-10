@@ -1,10 +1,8 @@
-//Sa se citeasca un numar N de la tastatura.
-//    Sa se citeasca N array-uri de 4 cifre.
-//
-//    Sa se calculeze care array-uri sunt fericite.
+//    Pt un array citit de la tastatura
+//    Numerele citite de la tastatura trebuie sa aiba cel putin 4 cifre (conditie)
+//    Sa se afiseze daca este fericit sau nefericit
 //    Un array este fericit cand suma cifrelor este para si cel putin un numar din array este par.
 //
-//    Sa se calculeze care array-uri sunt nefericite.
 //    Un array este nefericit cand produsul cifrelor este impar si cel putin un numar impar.
 //
 //    [1,3,6] -> Fericit
@@ -12,9 +10,11 @@
 //    [7,7] -> Nefericit
 //    [5] -> Nu este nefericit
 
+package array_fericit_sau_nefericit;
+
 import java.util.Scanner;
 
-class Tema3 {
+public class Tema3 {
     private Scanner s;
 
     {
@@ -29,7 +29,7 @@ class Tema3 {
     private int a[] = new int[n];
 
 
-    void conditie() {
+    public void conditie() {
 
         for (int i = 0; i < a.length; i++) {
 
@@ -53,7 +53,7 @@ class Tema3 {
     }
 
 
-    void afisare() {
+    public void afisare() {
 
         for (int z : a) {
             System.out.print(z + " ");

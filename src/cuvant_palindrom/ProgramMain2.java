@@ -1,3 +1,5 @@
+package cuvant_palindrom;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -5,7 +7,7 @@ public class ProgramMain2{
 
     public static void main(String[] args) {
         Tema2 t2 = new Tema2();
-        String st[] = {"r", "a", "b", "t", "r", "r", "t", "b", "a","l"};
+        String st[] = {"l", "a", "b", "t", "r", "r", "t", "b", "a","l"};
 
         System.out.println(Arrays.toString(st)+" ---> "+t2.isPalindrom(st));
 
@@ -24,7 +26,7 @@ public class ProgramMain2{
         //System.out.println(" ---> "+t2.isPalindrom(str));
 
 
-        //System.out.println(t2.isPalindrom1("bahaB"));
+        System.out.println(t2.isPalindrom1("bahab"));
 
 
     }

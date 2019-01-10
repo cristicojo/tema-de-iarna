@@ -5,6 +5,8 @@
 //    "PASTOR" -> NOT OKAY
 //    "KINDER" -> NOT OKAY
 
+package cuvant_palindrom;
+
 public class Tema2 {
 
     public boolean isPalindrom(String st[]) {
@@ -31,7 +33,7 @@ public class Tema2 {
             b = b + a.charAt(i);
         }
 
-        System.out.print(a+" --> ");
+        System.out.print(a+" ---> ");
         if (a.equals(b))
             return true;
         else
